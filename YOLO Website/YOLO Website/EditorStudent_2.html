@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	
+		<title>EDITOR</title>
+		
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="CSS/style1.css">
+		<link rel="stylesheet" type="text/css" href="CSS/Footer.css">
+		<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+		<link rel="stylesheet" type="text/css" href="CSS/particle.css">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	    <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+		<link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+		
+		<style>
+			body{
+				background-color: black;
+			}
+			
+			#title {
+				margin-top: 9%;
+		
+				text-align: center;
+				font-family: "lato", sans-serif;
+				font-weight: 300;
+				font-size: 70px;
+				letter-spacing: 13px;
+				
+				background: -webkit-linear-gradient(#c7c11c, #38495a);
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+				
+			}
+			
+			
+			
+			#container {
+				position: absolute;
+				margin-top:4%;
+				width:19%;
+				margin-left: 7%;
+			}
+			
+
+			.image {
+				width: 85%;
+				height: auto;
+
+			}
+			
+			.content{
+				margin-top:4%;
+				color : white;
+				margin-left:30%;
+				margin-right:10%;
+				
+			
+			}
+			
+			footer {
+				margin-top :170px;
+			}
+
+			
+			
+			
+		</style>
+		
+	</head>
+	
+	<body onload="navOnStart()">
+	
+		
+		<header class="fixed-top scrolled">
+	       	<div class="main" >
+				<img src="Images/logo.png" class="logo">
+				<nav>
+                  	<ul>
+					     <li><a href="home.html">Home</a></li>
+				         <li><a href="AboutUs.html">About us</a></li>
+				         <li><a href="Package offer page.html" class="active">Itineraries</a></li>
+				         <li><a href="Gallery.html">Gallery</a></li>
+                         <li><a href="Quiz.html">Quiz</a></li>
+                         <li><a href="Sitemap.html">Site map</a></li>	
+                  	</ul>  
+	           	</nav>
+			</div>
+		</header>
+		<script>
+			var navbar = document.querySelector('header')
+
+			function navOnStart() {
+				navbar.classList.remove('scrolled')
+			}
+			function navAfterStart() {
+				if (window.pageYOffset >0) {
+					navbar.classList.add('scrolled')
+				}else {navbar.classList.remove('scrolled')}
+			}
+               
+			window.onscroll = function() {navAfterStart()};
+			
+		</script>
+		
+		
+	
+		
+		
+			
+		<div id='title'>
+			<span class="title">YASANGA DIAS</span>
+			<h2><span>Student 2</span></h2>
+		</div>
+			
+			
+		<div class="modal" id="container">
+			<img src="Images/Yasanga.jpeg" alt="YASANGA" class="image">
+		</div>
+			
+		<div class="content">
+				<p>The first task i was assigned, was to create the Home page. This home page was designed to access several parts of the website which consist of About us, Itineraries, Gallery, Quiz and Sitemap. Furthermore, these several parts of the website are mainly accessed by the navigation bar therefore when you move your mouse to the links in the navigation bar, there will be a hovering effect and once you clicked on the link, it will remain active with the hovering effect. </p><br>
+		        <p>The next task was to create a query form. According to the theme of the website, i have created a contact form. so if all values are not filled out, the page will generate a popup alert stating the relative form field should be filled out. Once all form input fields are filled in with values, you can continue by clicking the "View details" button. once it's clicked, the summary of the form input values will be displayed along with two other buttons consisting with "Edit" and "Send" buttons. so when you clicked on the "edit" button, it returns to the form which you have filled in. Furthermore, when you clicked on the "send" button, it will email your form details to the developer's email address. Once it's submitted, the form dissapears with the alert stating 'Thank you for your feedback!'. </p>
+		</div>
+			
+		
+		<footer>
+			     <div class="container">
+				   <div class="sec aboutus">
+				     <h2>About us</h2>
+					 <p>At Yolo Travels, we are committed to understanding your idea of a prefect
+					 Sri lanka holiday. Whatever your budget, we assure caring personal service and highly-competitive prices.</p>
+				     <ul class="sci">
+						    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+							<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+							<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+							<li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+				     </ul>
+				   </div> 
+				   
+				   <div class="sec quickLinks">
+				    <h2>Quick Links</h2>
+					   <ul>
+				         <li><a href="AboutUs.html">About</a></li>
+				         <li><a href="Charming Srilanka.html#terms&conditions">Terms and Conditions</a></li>
+				         <li><a href="Package offer page.html">Itineraries</a></li>
+                         <li><a href="Quiz.html">Quiz</a></li>
+                         <li><a href="Sitemap.html">Site map</a></li>
+					   </ul>
+				 
+				   </div>
+				   
+				   <div class="sec contact">
+				     <h2>Contact Info</h2>
+					 <ul class="info">
+					    <li>
+						   <span><i class="fas fa-map-marker-alt"></i></span>
+						   <span>140A Vauxhall St, Colombo<br>
+						   00200,<br>Sri lanka.</span>
+						</li>
+					 
+					    <li>
+						   <span><i class="fas fa-phone-alt"></i></span>
+						   <span><a href="tel:+9471487233">+94 71487233</a></span>
+						</li>
+					 
+					    <li>
+						   <span><i class="fas fa-envelope"></i></span>
+						   <span><a href="mailto:yolotravels@gmail.com">yolotravels@gmail.com</a></span>
+						</li>
+					 
+					 </ul>
+				   </div>
+				 </div>
+				 
+
+			 </footer>
+		
+		
+	</body>
+	
+</html>

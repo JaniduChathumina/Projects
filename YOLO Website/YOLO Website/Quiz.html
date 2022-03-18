@@ -1,0 +1,440 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+	
+		<title>QUIZ</title>
+		
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="CSS/style1.css">
+		<link rel="stylesheet" type="text/css" href="CSS/Footer.css">
+		<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+		<link rel="stylesheet" type="text/css" href="CSS/particle.css">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	    <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+		<link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+		
+		<style>
+
+			.para { 
+				color : white ;
+				font-size : 19px; 
+				text-align : center;
+				font-weight: 900 ;
+				font-family : Verdana ;
+				margin-right : 14% ;
+			}
+			
+			.heading {
+				font-family : algerian ;
+				color : white ;
+				text-align : center ;
+				padding-right :20%;
+				padding-top : 11%; 
+				padding-left: 6%; 
+				font-size : 49px;
+			}
+			.subHeading{
+				color : white ;
+				padding: 25px; 
+				font-size : 40px;
+				text-align : center ;
+				margin-right : 12% ;
+				margin-top :20px;
+				font-family : "Lucida Console", Courier, monospace;
+			}
+			.important { 
+				color : white; 
+				margin-top :8% ;
+				margin-left : 350px ;
+				text-align : center ;
+				padding : 15px; 
+				font-size: 20px; 
+				font-weight: 900 ; 
+				font-family:Trebuchet MS  ; 
+				border: 2px solid white ;
+			}
+			body { 
+				background-image : url(Images/background.jpg) ; 
+				background-size: 100% ;
+				background-repeat: no-repeat ; 
+				font-family: sans-serif;
+			}
+			.button {
+  				border-radius: 18px;
+				border:none;
+  				background-color: #8B9000;
+  				color: white ;
+   				font-size: 24px;
+  				padding: 15px;
+  				transition: all 0.5s;
+  				cursor: pointer;
+  				margin-left: 38%;
+				margin-top :50px;
+				font-family :cooper-black ;
+				
+			}
+
+			.button span {
+  				cursor: pointer;
+  				display: inline-block;
+  				position: relative;
+  				transition: 0.6s;
+			}
+
+			.button span:after {
+  				content: '\00bb';
+  				position: absolute;
+  				opacity: 0;
+  				right: -20px;
+  				transition: 0.5s;
+			}
+
+			.button:hover span {
+  				padding-right: 27px;
+			}
+
+			.button:hover span:after {
+  				opacity: 1;
+  				right: 0;
+			}
+
+
+			
+			div.rightBar {
+  				height: 133.5%;
+  				width: 15%;
+  				position : absolute ;
+  				float : right;
+  				top: 0;
+  				right: 0;
+  				background-color: #d1d1d1;
+				opacity: 0.6;
+  					
+
+			}
+
+			div.rightBar label {
+  				padding: 6px 8px 6px 16px;
+  				font-size: 22px;
+  				color: black;
+  				display: block;
+				text-align:center;
+				
+			}
+
+			.rightBar label:hover {
+  				color: green ;
+				font-size:29px;
+			}
+			.BarHeadings {
+				color : black ;
+				text-align : center;
+				font-size : 23px;
+				padding-top :250px;
+				padding-bottom:22px;
+			}
+			
+
+
+			.frames {
+  				width: 40%;
+  				background-color: white;
+  				box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) ;
+  				
+				float : left ;
+				margin-top : 30% ;
+				margin-left : 90px ;
+			}
+			.secondFrames {
+				width: 40%;
+  				background-color: white;
+  				box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) ;
+  				
+				float : left ;
+				margin-top : 50px ;
+				margin-left : 90px ;
+			}
+			
+
+			.txt {
+				text-align : left;
+				padding : 20px ;
+			}
+			
+			#backtotop {
+				display: none;
+				position: fixed;
+				padding-top:7px;
+				padding-left:23px;
+				padding-right:23px;
+				text-align : center;
+				font-size : 42px;
+  				cursor: pointer;
+  				color: white ;
+  				background-color : #8B9000 ;
+				border:none;
+				opacity : 0.6 ;
+  				border-radius: 50% ;
+  				box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+				bottom: 20px;
+				right: 30px;
+				z-index: 99;
+				
+			}
+
+			
+			#backtotop:hover {
+				background-color: #f5c131;
+				
+			}
+			
+			footer {
+				margin-top :0px;
+			}
+			
+			.editor{
+				margin-top:2200px;
+				color :black;
+				font-size :24px;
+				text-align:right;
+				padding-right:40px;
+				letter-spacing:15px;
+				
+			}
+			.editor span:hover{
+			font-size:40px;
+				padding-right:320px;
+				letter-spacing:98px;
+			}
+			a {
+				text-decoration:none;
+			}
+			
+
+			
+		
+		</style>
+	</head>
+	
+	<body onload="navOnStart()">
+	
+		<button onclick="topFunction()" id="backtotop" title="Go to top">&#94;</button>
+		<script>
+		//Get the button to the correct place by id
+		var mybutton = document.getElementById("backtotop");
+
+		// When the user scrolls down 20px from the top of the document, the button becomes visible
+		//window.onscroll = function() {scrollFunction()};
+
+			function scrollFunction() {
+				if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+					mybutton.style.display = "block";
+				} else {
+					mybutton.style.display = "none";
+				}
+			}
+
+			// When the user clicks on the button, scroll to the top of the document
+			function topFunction() {
+				document.body.scrollTop = 0;
+				document.documentElement.scrollTop = 0;
+			}
+		</script>
+		
+		<header class="fixed-top scrolled">
+	       	<div class="main">
+				<img src="Images/logo.png" class="logo" alt="Logo">
+				<nav>
+                  	<ul>
+					<li><a href="home.html">Home</a></li>
+				         <li><a href="AboutUs.html">About us</a></li>
+				         <li><a href="Package offer page.html">Itineraries</a></li>
+				         <li><a href="Gallery.html">Gallery</a></li>
+                         <li><a href="Quiz.html" class="active">Quiz</a></li>
+                         <li><a href="Sitemap.html">Site map</a></li>	
+                  	</ul>  
+	           	</nav>
+			</div>
+		</header>
+		<script>
+			var navbar = document.querySelector('header')
+
+			function navOnStart() {
+				navbar.classList.remove('scrolled')
+			}
+			function navAfterStart() {
+				if (window.pageYOffset >0) {
+					navbar.classList.add('scrolled')
+				}else {navbar.classList.remove('scrolled')}
+			}
+               
+			window.onscroll = function() {navAfterStart(), scrollFunction()};
+			
+		</script>
+
+	
+	   
+	   
+	   
+	   
+	   
+	   
+
+
+		<h1 class="heading">KNOWLEDGE QUIZ</h1>
+		<h2 class="subHeading">HOW MUCH DO YOU KNOW ABOUT SRI LANKA ?</h2>
+
+		<p class="para"><b>Sri Lanka</b>, formely known as <b>Ceylon</b> and officially the <b>Democratic Socialist Republic of Sri Lanka</b>, </p>
+		<p class="para">is an island country lying in the <b>Indian Ocean</b> and seperated from peninsular <b>India</b> by the <b>Palk Strait</b>.</p>
+		
+
+		<table>
+		<tr>
+		<th>
+		<div class="important">
+		<p>You will have 1 minute to complete the Quiz.</p>
+		<p>For each correct answer you will be awarded 2 marks.</p>
+		<p>For each incorrect answer you will be deducted 1 mark.</p>
+		</div>
+		</th>
+		</tr>
+		</table>
+		
+		
+
+		<button class="button" onclick="window.open('Quiz Start.html')" ><span>Start QUIZ</span></button>
+
+
+		<div class="barContainer"></div>
+		<div class="rightBar">
+			<h1 class="BarHeadings">Time Duration : <br>1:00 minute</h1>
+			
+				<label>Question 1</label>
+				<label>Question 2</label>
+				<label>Question 3</label>
+				<label>Question 4</label>
+				<label>Question 5</label>
+				<label>Question 6</label>
+				<label>Question 7</label>
+				<label>Question 8</label>
+				<label>Question 9</label>
+				<label>Question 10</label>
+			
+		</div>
+
+		
+
+
+
+		<div class="frames">
+  			<img src="Images/kinniya_bridge1.jpg" alt="Kinniya Bridge" style="width:100%">
+  			<div class="container">
+  				<p class="txt">Kinniya Bridge is the longest bridge in Sri Lanka with a length of 396 metres (​1,299 ft), located in Trincomalee.</p>
+  			</div>
+		</div>
+
+		<div class="frames">
+  			<img src="Images/pidurutalagala.png" alt="Pidurutalagala Mountain" style="width:100%">
+  			<div class="container">
+  				<p class="txt">Pidurutalagala stands at 8,281 feet making it the tallest mountain in the country, located near Nuwara Eliya city.</p>
+  			</div>
+		</div>
+
+		<div class="secondFrames">
+  			<img src="Images/flower1.jpg" alt="(Nymphaea stellata) Blue Water Lily" style="width:100%">
+  			<div class="container">
+  				<p class="txt">The Nil Manel (Nymphaea stellata) Blue Water 
+				Lily was chosen as the national flower of Sri Lanka in February 1986.</p>
+  			</div>
+		</div>
+
+		<div class="secondFrames">
+  			<img src="Images/bird.jpg" alt="Ceylon junglefowl (Gallus lafayettii)" style="width:100%">
+  			<div class="container">
+  				<p class="txt">The Sri Lankan junglefowl (Gallus lafayettii), also known as the Ceylon junglefowl is the national bird of Srilanka.</p>
+  			</div>
+		</div>
+
+		<div class="secondFrames">
+  			<img src="Images/Temple.jpg" alt="Lotus Tower (Nelum Kuluna)" style="width:100%">
+  			<div class="container">
+  				<p class="txt">The Sacred Tooth Relic (Dālada) of the Buddha is the most venerated object of worship for Buddhists. Its housed in 
+				the Temple of the Tooth Relic (Dālada Māligāwa) in Kandy.</p>
+  			</div>
+		</div>
+
+		<div class="secondFrames">
+  			<img src="Images/tower1.jpg" alt="Lotus Tower" style="width:100%">
+  			<div class="container">
+  				<p class="txt">The tallest skyscraper Lotus Tower also known as “Nelum Kuluna” is 350 meters tall, located in the heart of Colombo city.
+				This tower is currently the tallest self-supported structure in South Asia. </p>
+  			</div>
+		</div>
+
+		<div class="editor"><a href="EditorStudent_3.html"><span>EDITOR</span></a></div>
+		
+		<footer>
+			     <div class="container">
+				   <div class="sec aboutus">
+				     <h2>About us</h2>
+					 <p>At Yolo Travels, we are committed to understanding your idea of a prefect
+					 Sri lanka holiday. Whatever your budget, we assure caring personal service and highly-competitive prices.</p>
+				     <ul class="sci">
+						    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+							<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+							<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+							<li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+				     </ul>
+				   </div> 
+				   
+				   <div class="sec quickLinks">
+				    <h2>Quick Links</h2>
+					   <ul>
+				         <li><a href="AboutUs.html">About</a></li>
+				         <li><a href="Charming Srilanka.html#terms&conditions">Terms and Conditions</a></li>
+				         <li><a href="Package offer page.html">Itineraries</a></li>
+                         <li><a href="Quiz.html">Quiz</a></li>
+                         <li><a href="Sitemap.html">Site map</a></li>
+					   </ul>
+				 
+				   </div>
+				   
+				   <div class="sec contact">
+				     <h2>Contact Info</h2>
+					 <ul class="info">
+					    <li>
+						   <span><i class="fas fa-map-marker-alt"></i></span>
+						   <span>140A Vauxhall St, Colombo<br>
+						   00200,<br>Sri lanka.</span>
+						</li>
+					 
+					    <li>
+						   <span><i class="fas fa-phone-alt"></i></span>
+						   <span><a href="tel:+9471487233">+94 71487233</a></span>
+						</li>
+					 
+					    <li>
+						   <span><i class="fas fa-envelope"></i></span>
+						   <span><a href="mailto:yolotravels@gmail.com">yolotravels@gmail.com</a></span>
+						</li>
+					 
+					 </ul>
+				   </div>
+				 </div>
+				 
+
+			 </footer>
+	
+
+		
+	</body>
+
+
+
+
+
+</html>

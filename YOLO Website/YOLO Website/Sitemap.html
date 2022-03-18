@@ -1,0 +1,253 @@
+
+<!doctype html>
+    <html>
+        <head>
+                <title>SVG</title>
+
+            <!--CSS link-->
+
+            <link rel="stylesheet" href="Sitemap.css">
+
+            <meta charset="utf-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" type="text/css" href="CSS/style1.css">
+            <link rel="stylesheet" type="text/css" href="CSS/Footer.css">
+            <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+            <link rel="stylesheet" type="text/css" href="CSS/particle.css">
+            <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+            <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+            
+            
+		    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" type="text/css" href="style1.css">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+      		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+
+
+        </head>
+        <body>
+            <div onload="navOnStart()">
+
+                <header class="fixed-top scrolled">
+                    <div class="main">
+                        <img src="Images/logo.png" class="logo">
+                        <nav>
+                            <ul>
+                                <li><a href="home.html">Home</a></li>
+                                <li><a href="AboutUs.html">About us</a></li>
+                                <li><a href="Package offer page.html">Itineraries</a></li>
+                                <li><a href="Gallery.html">Gallery</a></li>
+                                <li><a href="Quiz.html">Quiz</a></li>
+                                <li><a href="Sitemap.html" class="active">Site map</a></li>	
+                            </ul>  
+                        </nav>
+                    </div>
+                </header>
+            </div>
+            <script>
+                var navbar = document.querySelector('header')
+    
+                function navOnStart() {
+                    navbar.classList.remove('scrolled')
+                }
+                function navAfterStart() {
+                    if (window.pageYOffset >0) {
+                        navbar.classList.add('scrolled')
+                    }else {navbar.classList.remove('scrolled')}
+                }
+                    
+                window.onscroll = function() {navAfterStart()};
+            </script>
+
+            
+
+            <div id="headLine">
+                
+            <h1>THE SITEMAP</h1>
+                
+            </div>
+            <div id="botLine">
+                <svg id="JSsvg" width="1000" height="1000" rx="20" ry="20">
+
+                    <!--Home Page button-->
+
+                    <g id="HomeButt" >
+                        <a href="home.html">
+                            <rect x="410" y="50" rx="10" ry="10" width="250" height="80" />
+                            <text x="482" y="90"  alignment-baseline="middle" >Home</text>
+                        </a>
+                    </g>
+
+                    <!--Query Form button-->
+
+                    <g id="QueryButt">
+                        <a href="home.html#contact-queryForm">
+                            <rect x="410" y="200" rx="10" ry="10" width="180" height="80" />
+                            <text x="442" y="240"  alignment-baseline="middle" >Query Form</text>
+                        </a>
+                    </g>
+
+                    <!--Buy Product button-->
+
+                    <g id="ProductButt">
+                        <a href="Package offer page.html">
+                            <rect x="410" y="350" rx="10" ry="10" width="180" height="80" />
+                            <text x="442" y="390"  alignment-baseline="middle" >Buy Product</text>
+                        </a>
+                    </g>
+
+                    <!--Quiz button-->
+
+                    <g id="QuizButt">
+                        <a href="Quiz.html">
+                            <rect x="410" y="500" rx="10" ry="10" width="180" height="80" />
+                            <text x="475" y="540"  alignment-baseline="middle" >Quiz</text>
+                        </a>
+                    </g>
+
+                    <!--Images button-->
+
+                    <g id="ImagesButt">
+                        <a href="Gallery.html">
+                            <rect x="410" y="650" rx="10" ry="10" width="180" height="80" />
+                            <text x="460" y="690"  alignment-baseline="middle" >Gallery</text>
+                        </a>
+                    </g>
+
+                    <!--Student details button-->
+
+                    <g id="StuDetButt">
+                        <a href="AboutUs.html">
+                            <rect x="410" y="800" rx="10" ry="10" width="180" height="80" />
+                            <text x="422" y="840"  alignment-baseline="middle" >Student Details</text>
+                        </a>
+                    </g>
+
+                    <!--Editors Query page button-->
+
+                    <g id="EditorButt">
+                        <a href="EditorStudent_2.html">
+                            <rect x="600" y="235" rx="10" ry="10" width="140" height="45" />
+                            <text x="617" y="260"  alignment-baseline="middle" >Editor's Page</text>
+                        </a>
+                    </g>
+
+                    <!--Editors BuyProduct page button-->
+
+                    <g id="EditorButt">
+                        <a href="EditorStudent_1.html">
+                            <rect x="600" y="385" rx="10" ry="10" width="140" height="45" />
+                            <text x="617" y="410"  alignment-baseline="middle" >Editor's Page</text>
+                        </a>
+                    </g>
+                    <!--Editors Quiz page button-->
+
+                    <g id="EditorButt">
+                        <a href="EditorStudent_3.html">
+                            <rect x="600" y="535" rx="10" ry="10" width="140" height="45" />
+                            <text x="617" y="560"  alignment-baseline="middle" >Editor's Page</text>
+                        </a>
+                    </g>
+
+                    <!--Editors Images page button-->
+
+                    <g id="EditorButt">
+                        <a href="Editor_s Page.html">
+                            <rect x="600" y="685" rx="10" ry="10" width="140" height="45" />
+                            <text x="617" y="710"  alignment-baseline="middle" >Editor's Page</text>
+                        </a>
+                    </g>
+
+                    <!--Editors Student page button-->
+
+                    <g id="EditorButt">
+                        <a href="EditorStudent_3.html">
+                            <rect x="600" y="835" rx="10" ry="10" width="140" height="45" />
+                            <text x="617" y="860" alignment-baseline="middle" >Editor's Page</text>
+                        </a>
+                    </g>
+
+                    <!--The middle line-->
+
+                    <g id="TheLine">
+                        <polyline points="330, 90 330, 840"></polyline>
+                    </g>
+
+                    <!--Dots-->
+                    
+                    <g id="Dots">
+                        <circle cx="330" cy="90" r="10" />
+
+                        <circle cx="330" cy="240" r="10" />
+
+                        <circle cx="330" cy="390" r="10" />
+
+                        <circle cx="330" cy="540" r="10" />
+
+                        <circle cx="330" cy="690" r="10" />
+
+                        <circle cx="330" cy="840" r="10" />
+                    </g>
+
+                </svg>  
+            
+            </div>
+
+            <footer>
+                <div class="container">
+                  <div class="sec aboutus">
+                    <h2>About us</h2>
+                    <p>At Yolo Travels, we are committed to understanding your idea of a prefect
+                    Sri lanka holiday. Whatever your budget, we assure caring personal service and highly-competitive prices.</p>
+                    <ul class="sci">
+                           <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                           <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                           <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                           <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                    </ul>
+                  </div> 
+                  
+                  <div class="sec quickLinks">
+                   <h2>Quick Links</h2>
+                      <ul>
+                         <li><a href="AboutUs.html">About</a></li>
+				         <li><a href="#">Terms and Conditions</a></li>
+				         <li><a href="Package offer page.html">Itineraries</a></li>
+                         <li><a href="Quiz.html">Quiz</a></li>
+                         <li><a href="Sitemap.html">Site map</a></li>
+                      </ul>
+                
+                  </div>
+                  
+                  <div class="sec contact">
+                    <h2>Contact Info</h2>
+                    <ul class="info">
+                       <li>
+                          <span><i class="fas fa-map-marker-alt"></i></span>
+                          <span>140A Vauxhall St, Colombo<br>
+                          00200,<br>Sri lanka.</span>
+                       </li>
+                    
+                       <li>
+                          <span><i class="fas fa-phone-alt"></i></span>
+                          <span><a href="tel:+9471487233">+94 71487233</a></span>
+                       </li>
+                    
+                       <li>
+                          <span><i class="fas fa-envelope"></i></span>
+                          <span><a href="mailto:yolotravels@gmail.com">yolotravels@gmail.com</a></span>
+                       </li>
+                    
+                    </ul>
+                  </div>
+                </div>
+                
+
+            </footer>
+        </body>
+    </html>

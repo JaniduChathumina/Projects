@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="409.0" prefWidth="1025.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.WelcomeController">
+   <children>
+      <ImageView fitHeight="412.0" fitWidth="613.0" layoutX="398.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="First.jpeg" />
+         </image>
+         <effect>
+            <ColorAdjust brightness="-0.08" contrast="0.04" hue="0.61" saturation="-0.02" />
+         </effect>
+      </ImageView>
+      <Label alignment="CENTER" graphicTextGap="10.0" layoutX="80.0" layoutY="120.0" prefHeight="126.0" prefWidth="310.0" text="SYFRIUS" textOverrun="LEADING_WORD_ELLIPSIS" wrapText="true">
+         <textFill>
+            <LinearGradient cycleMethod="REFLECT" endX="0.5267176810111709" endY="0.7099236723120886" startX="1.0" startY="0.7099236786820506">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.007680491551459294">
+                     <color>
+                        <Color red="0.062745101749897" green="0.30588236451148987" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.5250206782464847">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.062745101749897" green="0.30588236451148987" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font name="Colonna MT" size="80.0" />
+         </font>
+         <effect>
+            <Reflection bottomOpacity="0.23" fraction="1.0" topOpacity="0.38" />
+         </effect>
+      </Label>
+      <Label alignment="TOP_LEFT" graphicTextGap="10.0" layoutX="134.0" layoutY="52.0" opacity="0.71" prefHeight="45.0" prefWidth="217.0" text="WELCOME" textOverrun="LEADING_WORD_ELLIPSIS" wrapText="true">
+         <textFill>
+            <LinearGradient cycleMethod="REFLECT" endX="0.5267176810111709" endY="0.7099236723120886" startX="1.0" startY="0.7099236786820506">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.007680491551459294">
+                     <color>
+                        <Color red="0.062745101749897" green="0.30588236451148987" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.5250206782464847">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.062745101749897" green="0.30588236451148987" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font name="Colonna MT" size="43.0" />
+         </font>
+      </Label>
+      <Label alignment="TOP_LEFT" graphicTextGap="10.0" layoutX="215.0" layoutY="113.0" opacity="0.65" prefHeight="30.0" prefWidth="40.0" text="TO" textOverrun="LEADING_WORD_ELLIPSIS" wrapText="true">
+         <textFill>
+            <LinearGradient cycleMethod="REFLECT" endX="0.5267176810111709" endY="0.7099236723120886" startX="1.0" startY="0.7099236786820506">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.007680491551459294">
+                     <color>
+                        <Color red="0.062745101749897" green="0.30588236451148987" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.5250206782464847">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.062745101749897" green="0.30588236451148987" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font name="Colonna MT" size="23.0" />
+         </font>
+      </Label>
+      <Button fx:id="ContinueButton" layoutX="134.0" layoutY="230.0" mnemonicParsing="false" onAction="#Continue" prefHeight="30.0" prefWidth="178.0" style="-fx-background-color: #10590b; -fx-text-fill: white;" text="Continue" />
+   </children>
+</AnchorPane>

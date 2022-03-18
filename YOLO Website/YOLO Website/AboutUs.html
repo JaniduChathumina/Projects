@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	
+		<title>ABOUT US</title>
+		
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="CSS/style1.css">
+		<link rel="stylesheet" type="text/css" href="CSS/Footer.css">
+		<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" 
+		integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+		<link rel="stylesheet" type="text/css" href="CSS/particle.css">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	    <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+		<link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+		
+		<style>
+			body {
+				background-image : url(Images/backgroundAboutUs.jpg) ; 
+				background-size: 100% ;
+				background-repeat: no-repeat ; 
+				
+			}
+			#mainTopic{
+			margin-top : 16%;
+			font-size : 90px;
+			margin-left : 15%;
+			
+			}
+			.button {
+  				border-radius: 15px;
+				border:none;
+  				background-color: #8B9000;
+  				color: white ;
+   				font-size: 15px;
+  				padding: 12px;
+  				transition: all 0.5s;
+  				cursor: pointer;
+  				margin-left: 19%;
+				margin-top :60px;
+				font-family :cooper-black ;
+				
+			}
+
+			.button span {
+  				cursor: pointer;
+  				display: inline-block;
+  				position: relative;
+  				transition: 0.6s;
+			}
+
+			.button span:after {
+  				content: '\00bb';
+  				position: absolute;
+  				opacity: 0;
+  				right: -20px;
+  				transition: 0.5s;
+			}
+
+			.button:hover span {
+  				padding-right: 27px;
+			}
+
+			.button:hover span:after {
+  				opacity: 1;
+  				right: 0;
+			}
+		
+			.sub-heading {
+				margin-top: 45%;
+				text-align: center;
+				font-size:90px;
+			}
+			.mySlides {
+				
+				
+				margin-top: 20%;
+				height:550px;
+				width:auto;
+				margin-left:96px;
+				
+				
+			}
+			.MeetTheTeam{
+				margin-top: 41%;
+				background-color:black;
+				overflow: hidden;
+				height : 1200px;
+				
+				
+			}
+			.MeetTheTeam span {
+				background: -webkit-linear-gradient(white, #38495a);
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+			}
+			#title {
+				margin-top: 150px;
+				color: #FFF;
+				text-align: center;
+				font-family: "lato", sans-serif;
+				font-weight: 300;
+				font-size: 100px;
+				letter-spacing: 13px;
+			}
+			
+			#backtotop {
+				display: none;
+				position: fixed;
+				padding-top:5px;
+				padding-left:16px;
+				padding-right:16px;
+				text-align : center;
+				font-size : 40px;
+  				cursor: pointer;
+  				color: white ;
+  				background-color : #8B9000 ;
+				border:none;
+				opacity : 0.6 ;
+  				border-radius: 50% ;
+  				box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+				bottom: 20px;
+				right: 30px;
+				z-index: 99;
+				
+			}
+
+			
+			#backtotop:hover {
+				background-color: #f5c131;
+				
+			}
+			
+			#container {
+				position: absolute;
+				margin-top:140px;
+				width:19%;
+				margin-left: 6%;
+			}
+			#container1 {
+				
+				position: absolute;
+				margin-top:140px;
+				width: 19%;
+				margin-left: 29%;
+			}
+			#container2 {
+				
+				position: absolute;
+				margin-top:140px;
+				width: 19%;
+				margin-left: 52%;
+			}
+			#container3 {
+				
+				position: absolute;
+				margin-top:140px;
+				width: 19%;
+				margin-left: 75%;
+			}
+
+			.image {
+				width: 100%;
+				height: auto;
+			}
+
+			.overlay {
+				position: absolute;
+				bottom: 100%;
+				left: 0;
+				right: 0;
+				background-color:#8B8000;
+				overflow: hidden;
+				width: 100%;
+				height:0;
+				transition: .5s ease;
+			}
+
+			.modal:hover .overlay {
+				bottom: 0;
+				height: 100%;
+			}
+
+			.text {
+				color: white;
+				font-size: 20px;
+				position: absolute;
+				top: 40%;
+				left: 50%;
+				-webkit-transform: translate(-50%, -50%);
+				-ms-transform: translate(-50%, -50%);
+				transform: translate(-50%, -50%);
+				text-align: center;
+			}
+			.text2 {
+				color: white;
+				font-size: 20px;
+				position: absolute;
+				top: 60%;
+				left: 50%;
+				-webkit-transform: translate(-50%, -50%);
+				-ms-transform: translate(-50%, -50%);
+				transform: translate(-50%, -50%);
+				text-align: center;
+			}
+			
+			footer {
+				margin-top :0px;
+			}
+			
+			.editor{
+				margin-top:-70px;
+				color :white;
+				font-size :24px;
+				text-align:right;
+				padding-right:40px;
+				letter-spacing:15px;
+				
+			}
+			.editor span:hover{
+				font-size:40px;
+				padding-right:320px;
+				letter-spacing:98px;
+			}
+			a {
+				text-decoration:none;
+			}
+			
+			
+		</style>
+		
+	</head>
+	
+	<body onload="navOnStart()">
+	
+		<button onclick="topFunction()" id="backtotop" title="Go to top">&#94;</button>
+		<script>
+		//Get the button
+		var mybutton = document.getElementById("backtotop");
+
+		// When the user scrolls down 20px from the top of the document, show the button
+
+			function scrollFunction() {
+				if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+					mybutton.style.display = "block";
+				} else {
+					mybutton.style.display = "none";
+				}
+			}
+
+			// When the user clicks on the button, scroll to the top of the document
+			function topFunction() {
+				document.body.scrollTop = 0;
+				document.documentElement.scrollTop = 0;
+			}
+		</script>
+		
+		<header class="fixed-top scrolled">
+	       	<div class="main" >
+				<img src="Images/logo.png" class="logo" alt="Logo">
+				<nav>
+                  	<ul>
+					<li><a href="home.html">Home</a></li>
+				     <li><a href="AboutUs.html" class="active">About us</a></li>
+				     <li><a href="Package offer page.html">Itineraries</a></li>
+				     <li><a href="Gallery.html">Gallery</a></li>
+                     <li><a href="Quiz.html">Quiz</a></li>
+                     <li><a href="Sitemap.html">Site map</a></li>	
+                  	</ul>  
+	           	</nav>
+			</div>
+		</header>
+		<script>
+			var navbar = document.querySelector('header')
+
+			function navOnStart() {
+				navbar.classList.remove('scrolled')
+			}
+			function navAfterStart() {
+				if (window.pageYOffset >0) {
+					navbar.classList.add('scrolled')
+				}else {navbar.classList.remove('scrolled')}
+			}
+               
+			window.onscroll = function() {navAfterStart(),scrollFunction()};
+			
+		</script>
+		<div id='stars'></div>
+		
+	
+		<h1 id="mainTopic">YOLO TRAVELS </h1>
+		
+		<button class="button" onClick='window.location.href="https://youtu.be/hAVUmnsKdeo"'><span>Watch a Video</span></button>
+		
+		
+		<div class="sub-heading">
+			<p>YOU ONLY LIVE ONCE</p>
+		</div>
+
+		<div class="w3-content w3-section"  style="height:130px; width:auto; ">
+			<img class="mySlides w3-animate-bottom" src="Images/team4.jpg" alt="slides" >
+			<img class="mySlides w3-animate-bottom" src="Images/B1.jpg" alt="slides1">
+			<img class="mySlides w3-animate-bottom" src="Images/B2.jpg" alt="slides2">
+			<img class="mySlides w3-animate-top" src="Images/team5.jpeg" alt="slides3">
+			<img class="mySlides w3-animate-bottom" src="Images/team2.jpeg" alt="slides4">
+			<img class="mySlides w3-animate-bottom" src="Images/team1.jpg" alt="slides5">
+			<img class="mySlides w3-animate-top" src="Images/team3.jpeg" alt="slides6">
+			<img class="mySlides w3-animate-bottom" src="Images/v1.jpeg" alt="slides7">
+			<img class="mySlides w3-animate-bottom" src="Images/v2.jpg" alt="slides8">
+			<img class="mySlides w3-animate-bottom" src="Images/map.jpeg" alt="slides9">
+		</div>
+
+		<script>
+			var myIndex = 0;
+			carousel();
+
+			function carousel() {
+				var i;
+				var x = document.getElementsByClassName("mySlides");
+				for (i = 0; i < x.length; i++) {
+				x[i].style.display = "none";  
+				}
+				myIndex++;
+				if (myIndex > x.length) {myIndex = 1}    
+				x[myIndex-1].style.display = "block";  
+				setTimeout(carousel, 2500);    
+			}
+		</script>
+		
+		
+		<div class="MeetTheTeam">
+			<div id='stars1'></div>
+			<div id='stars2'></div>
+			<div id='stars3'></div>
+			<div id='title'>
+				<span>MEET THE TEAM</span>
+			</div>
+			
+			<div class="modal" id="container">
+				<img src="Images/Chanika.png" alt="CHANIKA" class="image">
+				<div class="overlay">
+					<div class="text">CHANIKA NETHMINI</div>
+					<div class="text2">Student 1</div>
+				</div>
+			</div>
+			
+			<div class="modal" id="container1">
+				<img src="Images/Yasanga.jpeg" alt="YASANGA" class="image">
+				<div class="overlay">
+					<div class="text">YASANGA DIAS</div>
+					<div class="text2">Student 2</div>
+				</div>
+			</div>
+			
+			<div class="modal" id="container2">
+				<img src="Images/Janidu.png" alt="JANIDU" class="image">
+				<div class="overlay">
+					<div class="text">JANIDU CHATHUMINA</div>
+					<div class="text2">Student 3</div>
+				</div>
+			</div>
+			
+			<div class="modal" id="container3">
+				<img src="Images/Mikael.jpeg" alt="MIKAEL" class="image">
+				<div class="overlay">
+					<div class="text">MIKAEL LYE</div>
+					<div class="text2">Student 4</div>
+				</div>
+			</div>
+		
+		</div>
+		
+		<div class="editor"><a href="EditorStudent_3.html"><span>EDITOR</span></a></div>
+		
+		<footer>
+			     <div class="container">
+				   <div class="sec aboutus">
+				     <h2>About us</h2>
+					 <p>At Yolo Travels, we are committed to understanding your idea of a prefect
+					 Sri lanka holiday. Whatever your budget, we assure caring personal service and highly-competitive prices.</p>
+				     <ul class="sci">
+						    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+							<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+							<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+							<li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+				     </ul>
+				   </div> 
+				   
+				   <div class="sec quickLinks">
+				    <h2>Quick Links</h2>
+					   <ul>
+				         <li><a href="AboutUs.html">About</a></li>
+				         <li><a href="Charming Srilanka.html#terms&conditions">Terms and Conditions</a></li>
+				         <li><a href="Package offer page.html">Itineraries</a></li>
+                         <li><a href="Quiz.html">Quiz</a></li>
+                         <li><a href="Sitemap.html">Site map</a></li>
+					   </ul>
+				 
+				   </div>
+				   
+				   <div class="sec contact">
+				     <h2>Contact Info</h2>
+					 <ul class="info">
+					    <li>
+						   <span><i class="fas fa-map-marker-alt"></i></span>
+						   <span>140A Vauxhall St, Colombo<br>
+						   00200,<br>Sri lanka.</span>
+						</li>
+					 
+					    <li>
+						   <span><i class="fas fa-phone-alt"></i></span>
+						   <span><a href="tel:+9471487233">+94 71487233</a></span>
+						</li>
+					 
+					    <li>
+						   <span><i class="fas fa-envelope"></i></span>
+						   <span><a href="mailto:yolotravels@gmail.com">yolotravels@gmail.com</a></span>
+						</li>
+					 
+					 </ul>
+				   </div>
+				 </div>
+				 
+
+			 </footer>
+		
+	
+		
+		
+		
+		
+		
+	</body>
+	
+</html>

@@ -1,0 +1,34 @@
+-------------------------------------------
+    Occupation of Vaccination Booths 
+-------------------------------------------
+ 
+    Booth 0 is occupied by LELUM SENADEERA 
+    Booth 1 is occupied by ESHARA HASHEIL 
+    Booth 2 is not occupied 
+    Booth 3 is not occupied 
+    Booth 4 is not occupied 
+    Booth 5 is not occupied 
+ 
+-------------------------------------------
+             Patient Details 
+-------------------------------------------
+ 
+Patient Name     : LELUM SENADEERA 
+Patient Age      : 18 
+Patient City     : GALLE 
+Patient NIC      : 1 
+Vaccination Type : AstraZeneca 
+ 
+ 
+Patient Name     : ESHARA HASHEIL 
+Patient Age      : 23 
+Patient City     : GALLE 
+Patient NIC      : 2 
+Vaccination Type : AstraZeneca 
+ 
+ 
+-------------------------------------------
+     115 vaccinations are remaining 
+-------------------------------------------
+  Pfizer-50  Sinopharm-21  AstraZeneca-44
+-------------------------------------------

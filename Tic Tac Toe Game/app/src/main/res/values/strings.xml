@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Tutorial 5</string>
+    <string name="let_s_go">Let\'s Go !</string>
+    <string name="todo">TODO</string>
+    <string name="you_won">YOU WON</string>
+    <string name="play_again">PLAY AGAIN</string>
+
+
+</resources>

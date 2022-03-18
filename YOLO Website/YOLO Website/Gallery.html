@@ -1,0 +1,303 @@
+
+<!doctype html>
+<html>
+    <head>
+        <title>Gallery</title>
+        <link rel="stylesheet" href="Gallery.css">
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="CSS/style1.css">
+        <link rel="stylesheet" type="text/css" href="CSS/Footer.css">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+        <link rel="stylesheet" type="text/css" href="CSS/particle.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style1.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+      	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+
+
+    </head>
+
+    <body id="Body">
+
+        <div onload="navOnStart()">
+
+            <header class="fixed-top scrolled">
+                <div class="main">
+                    <img src="Images/logo.png" class="logo">
+                    <nav>
+                        <ul>
+                            <li><a href="home.html">Home</a></li>
+                            <li><a href="AboutUs.html">About us</a></li>
+                            <li><a href="Package offer page.html">Itineraries</a></li>
+                            <li><a href="Gallery.html" class="active">Gallery</a></li>
+                            <li><a href="Quiz.html">Quiz</a></li>	
+                            <li><a href="Sitemap.html">Site map</a></li>	
+                        </ul>  
+                    </nav>
+                </div>
+            </header>
+        </div>
+
+        <!-- TOP BUTTONS-->
+
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Background Color</button>
+            <div id="myDropdown" class="dropdown-content">
+                <p onclick="a()">Pink</p>
+                <p onclick="b()">Black</p>
+                <p onclick="c()">Default</p>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button onclick="MyFunction()" class="dropbtn">Text Color</button>
+            <div id="myDropdown2" class="dropdown-content">
+                <p onclick="x()">Red</p>
+                <p onclick="y()">Purple</p>
+                <p onclick="z()">Default</p>
+            </div>
+        </div>
+
+        <!--CONTENT-->
+
+        <div class="wrapper">
+            
+            <h1>GALLERY</h1>
+            <div class="container">
+                <ul class="grid-col" style="list-style: none;">
+                    <li id="img-1"><img src="Images/colombO.jpeg" alt="" onclick="img1()"><p>Colombo</p></li>
+                    <li id="img-2"><img src="Images/kandY.jpeg" alt="" onclick="img2()"><p>Kandy</p></li>
+                    <li id="img-3"><img src="Images/anurA.jpeg" alt="" onclick="img3()"><p>Anuradhapura & Polonnaruwa</p></li>
+                    <li id="img-4"><img src="Images/beacH.jpeg" alt="" onclick="img4()"><p>Beaches</p></li>
+                </ul>
+            </div>
+        </div>
+
+        <script>
+
+            /*Back Ground color*/
+
+            function a(){
+                document.getElementById("Body").style.backgroundColor = "pink";
+            }
+            function b(){
+                document.getElementById("Body").style.backgroundColor = "black";
+            }
+            function c(){
+                document.getElementById("Body").style.backgroundColor = "white";
+            }
+
+            /*Text color*/
+
+            function x(){
+                document.getElementById("Body").style.color = "red";
+            }
+            function y(){
+                document.getElementById("Body").style.color = "purple";
+            }
+            function z(){
+                document.getElementById("Body").style.color = "black";
+            }
+            
+            /*BG BUTTON*/
+
+            /* When the user clicks on the button, 
+            toggle between hiding and showing the dropdown content */
+           
+            function myFunction() {
+                document.getElementById("myDropdown").classList.toggle("show");
+            }
+            
+            /* Close the dropdown if the user clicks outside of it*/
+            
+            window.onclick = function(event) {
+                if (!event.target.matches('.dropbtn')) {
+                    var dropdowns = document.getElementsByClassName("dropdown-content");
+                    var i;
+                    for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                    }
+                }
+            }
+            /*TEXT BUTTON*/
+            
+            /* When the user clicks on the button, 
+            toggle between hiding and showing the dropdown content */
+
+            
+            function MyFunction() {
+                document.getElementById("myDropdown2").classList.toggle("show");
+            }
+            
+
+            /* Close the dropdown if the user clicks outside of it*/
+
+            
+            window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var j;
+                for (j = 0; j < dropdowns.length; j++) {
+                var openDropdown2 = dropdowns[j];
+                if (openDropdown2.classList.contains('show')) {
+                    openDropdown2.classList.remove('show');
+                }
+                }
+            }
+            }
+
+            function img1() {
+                var newContent =`<div class="fullpreview">
+                                <img src="Images/colombO.jpeg" alt="COLOMBO" srcset="" id="previewIMG">
+                                <div class="description">
+                                <h2>COLOMBO</h2>
+                                <p>
+                                Cosmopolitan Colombo, gateway to the wonder of Sri Lanka, boasts a rich colonial heritage, featuring a melting pot of races, religions, and cultures.
+                                Plunge into Colombo's enticing street food scene, eat like a local, and immerse yourself in the sights, sounds and aromas of the whirling Pettah Bazaar.
+                                </p>
+                                <div id="backIcon" onclick="backToGallery()"> Back</div>
+                                </div>`
+                document.getElementsByClassName("container")[0].innerHTML = newContent
+            }
+
+            function img2() {
+                var newContent =`<div class="fullpreview">
+                                <img src="Images/kandY.jpeg" alt="KANDY" srcset="" id="previewIMG">
+                                <div class="description">
+                                <h2>KANDY</h2>
+                                <p>
+                                Known as a pilgrimage destination for the Temple of the Tooth Relic (a sacred tooth of the Buddha), a listed UNESCO World
+                                Heritage Site, Kandy is a sacred city, due to the importance and spiritual significance of this temple.
+                                </p>
+                                <div id="backIcon" onclick="backToGallery()"> Back</div>
+                                </div>`
+                document.getElementsByClassName("container")[0].innerHTML = newContent
+            }
+
+            function img3() {
+                var newContent =`<div class="fullpreview">
+                                <img src="Images/anurA.jpeg" alt="ANURADHAPURA & POLONNARUWA" srcset="" id="previewIMG">
+                                <div class="description">
+                                <h2>ANURADHAPURA & POLONNARUWA</h2>
+                                <p>
+                                Anuradhapura is one of the ancient capitals of Sri Lanka, famous for its well-preserved ruins of an ancient Sinhala civilization. 
+                                It was the third capital of the kingdom of Rajarata, following the kingdoms of Tambapanni and Upatissa Nuwara. <br><br>
+                                Polonnaruwa is the second largest city in North Central Province, but it is known as one of the cleanest and more beautiful cities in the country. 
+                                The green environment, amazing ancient constructions, Parakrama Samudra (a huge lake built in 1200), and attractive tourist hotels and hospitable people, attract tourists.
+                                </p>
+                                <div id="backIcon" onclick="backToGallery()"> Back</div>
+                                </div>`
+                document.getElementsByClassName("container")[0].innerHTML = newContent
+            }
+
+            function img4() {
+                var newContent =`<div class="fullpreview">
+                                <img src="Images/beacH.jpeg" alt="BEACHES" srcset="" id="previewIMG">
+                                <div class="description">
+                                <h2>BEACHES</h2>
+                                <p>
+                                Rapidly gaining international popularity as one of the most beautiful beach destinations in the world, the island nation 
+                                of Sri Lanka offers a range of landscapes, from rainforests to endless miles of powdery, white-sand beach. 
+                                The natural beauty is accented by a cultural history dating back thousands of years.
+                                </p>
+                                <div id="backIcon" onclick="backToGallery()"> Back</div>
+                                </div>`
+                document.getElementsByClassName("container")[0].innerHTML = newContent
+            }
+
+            function backToGallery(){
+                var galleryContent =`<div class="wrapper">
+                                        <div class="container">
+                                            <ul class="grid-col" style="list-style: none;">
+                                                <li id="img-1"><img src="Images/colombO.jpeg" alt="" onclick="img1()"><p>Colombo</p></li>
+                                                <li id="img-2"><img src="Images/kandY.jpeg" alt="" onclick="img2()"><p>Kandy</p></li>
+                                                <li id="img-3"><img src="Images/anurA.jpeg" alt="" onclick="img3()"><p>Anuradhapura & Polonnaruwa</p></li>
+                                                <li id="img-4"><img src="Images/beacH.jpeg" alt="" onclick="img4()"><p>Beaches</p></li>
+                                            </ul>
+                                        </div>
+                                    </div>`
+                document.getElementsByClassName("container")[0].innerHTML = galleryContent;
+            }
+
+            var navbar = document.querySelector('header')
+    
+                function navOnStart() {
+                    navbar.classList.remove('scrolled')
+                }
+                function navAfterStart() {
+                    if (window.pageYOffset >0) {
+                        navbar.classList.add('scrolled')
+                    }else {navbar.classList.remove('scrolled')}
+                }
+                    
+                window.onscroll = function() {navAfterStart()};
+        </script>
+
+        <footer>
+            <div class="container">
+            <div class="sec aboutus">
+                <h2>About us</h2>
+                <p>At Yolo Travels, we are committed to understanding your idea of a prefect
+                Sri lanka holiday. Whatever your budget, we assure caring personal service and highly-competitive prices.</p>
+                <ul class="sci">
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                </ul>
+            </div> 
+            
+            <div class="sec quickLinks">
+            <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="AboutUs.html">About</a></li>
+				    <li><a href="Charming Srilanka.html#terms&conditions">Terms and Conditions</a></li>
+				    <li><a href="Package offer page.html">Itineraries</a></li>
+                    <li><a href="Quiz.html">Quiz</a></li>
+                    <li><a href="Sitemap.html">Site map</a></li>
+                </ul>
+            
+            </div>
+            
+            <div class="sec contact">
+                <h2>Contact Info</h2>
+                <ul class="info">
+                <li>
+                    <span><i class="fas fa-map-marker-alt"></i></span>
+                    <span>140A Vauxhall St, Colombo<br>
+                    00200,<br>Sri lanka.</span>
+                </li>
+                
+                <li>
+                    <span><i class="fas fa-phone-alt"></i></span>
+                    <span><a href="tel:+9471487233">+94 71487233</a></span>
+                </li>
+                
+                <li>
+                    <span><i class="fas fa-envelope"></i></span>
+                    <span><a href="mailto:yolotravels@gmail.com">yolotravels@gmail.com</a></span>
+                </li>
+                
+                </ul>
+            </div>
+            </div>
+            
+
+        </footer>
+
+    </body>
+    
+</html>

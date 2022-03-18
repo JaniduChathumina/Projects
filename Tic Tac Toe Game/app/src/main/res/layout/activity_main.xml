@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/game_board">
+
+    <TextView
+        android:id="@+id/id_title"
+        android:layout_width="225dp"
+        android:layout_height="47dp"
+        android:fontFamily="cursive"
+        android:gravity="center"
+        android:text="@string/let_s_go"
+        android:textColor="@color/white"
+        android:textSize="45sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.077" />
+
+    <TableLayout
+        android:id="@+id/id_table_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_title"
+        app:layout_constraintVertical_bias="0.322">
+
+
+    </TableLayout>
+
+    <ImageView
+        android:id="@+id/id_image"
+        android:layout_width="147dp"
+        android:layout_height="113dp"
+        android:contentDescription="@string/todo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/id_image3"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_title"
+        app:layout_constraintVertical_bias="0.816"
+        app:srcCompat="@drawable/tictactoebk"
+        tools:ignore="ImageContrastCheck" />
+
+    <ImageView
+        android:id="@+id/id_image3"
+        android:layout_width="147dp"
+        android:layout_height="113dp"
+        android:contentDescription="@string/todo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/id_image"
+        app:layout_constraintTop_toBottomOf="@+id/id_title"
+        app:layout_constraintVertical_bias="0.816"
+        app:srcCompat="@drawable/tictactoebk"
+        tools:ignore="ImageContrastCheck" />
+
+    <TextView
+        android:id="@+id/id_resultView"
+        android:layout_width="381dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="39dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textSize="28sp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_title" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

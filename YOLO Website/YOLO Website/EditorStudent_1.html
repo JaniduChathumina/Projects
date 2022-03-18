@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	
+		<title>EDITOR </title>
+		
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="style1.css">
+		<link rel="stylesheet" type="text/css" href="Footer.css">
+		<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+		<link rel="stylesheet" type="text/css" href="CSS/particle.css">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	    <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+		<link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+		
+		<style>
+			body{
+				background-color: black;
+			}
+			
+			#title {
+				margin-top: 9%;
+		
+				text-align: center;
+				font-family: "lato", sans-serif;
+				font-weight: 300;
+				font-size: 70px;
+				letter-spacing: 13px;
+				
+				background: -webkit-linear-gradient(#c7c11c, #38495a);
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+				
+			}
+			
+			
+			
+			#container {
+				position: absolute;
+				margin-top:4%;
+				width:19%;
+				margin-left: 7%;
+			}
+			
+
+			.image {
+				width: 85%;
+				height: auto;
+			}
+			
+			.content{
+				margin-top:4%;
+				color : white;
+				margin-left:30%;
+				margin-right:10%;
+				
+			
+			}
+			
+			footer {
+				margin-top :150px;
+			}
+			
+
+			
+			
+			
+		</style>
+		
+	</head>
+	
+	<body onload="navOnStart()">
+	
+		
+		<header class="fixed-top scrolled">
+	       	<div class="main">
+			<img src="logo.png" class="logo">
+			<nav>
+                  	<ul>
+				         <li><a href="home.html">Home</a></li>
+				         <li><a href="AboutUs.html">About us</a></li>
+				         <li><a href="Package offer page.html" class="active">Itineraries</a></li>
+				         <li><a href="Gallery.html">Gallery</a></li>
+                         <li><a href="Quiz.html">Quiz</a></li>
+                         <li><a href="Sitemap.html">Site map</a></li>		
+                  	</ul>  
+	           	</nav>
+			</div>
+		</header>
+		<script>
+			var navbar = document.querySelector('header')
+
+			function navOnStart() {
+				navbar.classList.remove('scrolled')
+			}
+			function navAfterStart() {
+				if (window.pageYOffset >0) {
+					navbar.classList.add('scrolled')
+				}else {navbar.classList.remove('scrolled')}
+			}
+               
+			window.onscroll = function() {navAfterStart()};
+			
+		</script>
+
+		
+	
+		
+		
+			
+		<div id='title'>
+			<span class="title">Chanika Manamperi</span>
+			<h2><span>Student 1</span></h2>
+		</div>
+			
+			
+		<div class="modal" id="container">
+			<img src="Images/chanika.jpeg" alt="JANIDU" class="image">
+		</div>
+			
+		<div class="content">
+				<p>First in the main page there 4 tabs with a button that is link to there individual package details. Once the customer clicks the button,
+				the customer will be directed to that specific package's details.In this page there will be a button provided to direct the customer
+				to the payment form.In the payment form if the mandatory fields are missing, when the customer press the view details button,
+				a pop-up notification will come up on top of the screen prompting the customer to fill the field. Once the all the Fields are filled
+				 there is a button called "multiply".By pressing this customer can get the total payment displayed in the screen.
+				 After that when the customer press the view details button, it shows a summary of all the details given by them. But as a warning, I wasn't able to
+				 implement the code to display the total payment in the summary.
+		</div>
+		<br>
+		<footer>
+			     <div class="container">
+				   <div class="sec aboutus">
+				     <h2>About us</h2>
+					 <p>At Yolo Travels, we are committed to understanding your idea of a prefect
+					 Sri lanka holiday. Whatever your budget, we assure caring personal service and highly-competitive prices.</p>
+				     <ul class="sci">
+						    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+							<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+							<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+							<li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+				     </ul>
+				   </div> 
+				   
+				   <div class="sec quickLinks">
+				    <h2>Quick Links</h2>
+					   <ul>
+				         <li><a href="AboutUs.html">About</a></li>
+				         <li><a href="Charming Srilanka.html#terms&conditions">Terms and Conditions</a></li>
+				         <li><a href="Package offer page.html">Itineraries</a></li>
+                         <li><a href="Quiz.html">Quiz</a></li>
+                         <li><a href="Sitemap.html">Site map</a></li>
+					   </ul>
+				 
+				   </div>
+				   
+				   <div class="sec contact">
+				     <h2>Contact Info</h2>
+					 <ul class="info">
+					    <li>
+						   <span><i class="fas fa-map-marker-alt"></i></span>
+						   <span>140A Vauxhall St, Colombo<br>
+						   00200,<br>Sri lanka.</span>
+						</li>
+					 
+					    <li>
+						   <span><i class="fas fa-phone-alt"></i></span>
+						   <span><a href="tel:+9471487233">+94 71487233</a></span>
+						</li>
+					 
+					    <li>
+						   <span><i class="fas fa-envelope"></i></span>
+						   <span><a href="mailto:yolotravels@gmail.com">yolotravels@gmail.com</a></span>
+						</li>
+					 
+					 </ul>
+				   </div>
+				 </div>
+				 
+
+			 </footer>
+		
+		
+	</body>
+	
+</html>

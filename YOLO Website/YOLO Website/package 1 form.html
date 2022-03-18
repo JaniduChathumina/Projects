@@ -1,0 +1,276 @@
+<DOCTYPE!>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta charset="viewport" content="with=device-width" ,initial scale=1.0">
+		<title>Payment Form</title>
+		<link rel="stylesheet" href="package 1 form.css">
+		<link rel="stylesheet" type="text/css" href="style1.css">
+		<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+		<!--the Jquery is taken from "https://stackoverflow.com/questions/46482817/how-to-calculate-the-amount-by-multiplying-one-select-box-value-one-textbox-va" -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<style>
+			.btn1{
+				display:inline-block;
+				text-decoration:none;
+				color:#cc0000;
+				padding:12px 34px;
+				font-size:13px;
+				background:transparent;
+				position:relative;
+				transition:0.3s;
+			}
+			.btn1:hover{
+				border:1px solid #cc0000;
+				background:#cc0000;
+				border-radius:40px;
+				color:#fff;
+			}
+		</style>
+	</head>
+	<body onload="navOnStart()">
+		<header class="fixed-top scrolled">
+	       	<div class="main">
+			<img src="logo.png" class="logo">
+			<nav>
+                  	<ul>
+				         <li><a href="home.html">Home</a></li>
+				         <li><a href="AboutUs.html">About us</a></li>
+				         <li><a href="Package offer page.html" class="active">Itineraries</a></li>
+				         <li><a href="Gallery.html">Gallery</a></li>
+                         <li><a href="Quiz.html">Quiz</a></li>
+                         <li><a href="Sitemap.html">Site map</a></li>		
+                  	</ul>  
+	           	</nav>
+			</div>
+		</header>
+			<script>
+			var navbar = document.querySelector('header')
+
+			function navOnStart() {
+				navbar.classList.remove('scrolled')
+			}
+			function navAfterStart() {
+				if (window.pageYOffset >0) {
+					navbar.classList.add('scrolled')
+				}else {navbar.classList.remove('scrolled')}
+			}
+               
+			window.onscroll = function() {navAfterStart()};
+			
+		</script>
+
+		<div class="container">
+		<div class="header">
+		<h1> Payment Form</h1>
+		</div>
+		<form class="form" id="Paymentform" >
+		
+			<div class="input-group">
+				<label for="fname"> Full Name:</label>
+				<input type="text" id="fname" name="fname">
+			</div>
+			<div class="input-group">
+				<label for="cname"> Country:</label>
+				<input type="text" id="cname" name="cname">
+			</div>
+			<p><u>Choose the Package of Your Liking</u></p>
+			<p>001 - Charming Srilanka(Kalutara and Colombo)</p>
+			<p>002 - Heritage Srilanka(Anuradhapura and Polonnaruwa)</p>
+			<p>003 - Kandy Tour</p>
+			<p>004 - Beach Tour</p>
+			<div class="input-group">
+				<label for="package"> Package Name: (Enter the Code)</label>
+				<input type="text" id="package" name="package">
+			</div>
+			<div class="input-group">
+				<label for="pname"> Pickup location:</label>(this is because we do not provide airplane bookings)
+				<input type="text" id="pname" name="pname">
+			</div>
+			<div class="input-group">
+				<label for="pname"> Drop off location:</label>(this is after the tour is over)
+				<input type="text" id="dname" name="dname">
+			</div>
+			<div class="input-group">
+				<label for="d-day"> When do you start the tour:</label>
+				<input type="date" id="d-day" name="d-day">
+			</div>
+			<div class="input-group">
+				<label for="time"> At what time do you want to be picked up:</label>
+				<input type="time" id="time" name="time">
+			</div>
+			<div class="input-group">
+				<label for="num1"> how many people will be in your group: </label>
+				<input type="text" id="num1" name="num1"><br>
+			</div>
+			<p><u>Room Type</u></p>
+			<p>1 - Single</p>
+			<p>2 - Double</p>
+			<p>3 - Triple</p>
+			<p>4 - Family(for 4 people)</p><br>
+			<div class="input-group">
+				<label for="num"> Type of room you choose:(Choose from above and enter the number) </label><br>
+				<input type="text" id="num1" name="num1">
+				<p style="color:red;">*The number of beds can be provided once they reach the hotel</p><br>
+			</div>
+			<div class="input-group">
+				<label for="email"> Enter your email:</label>
+				<input type="email" id="email" name="email">
+			</div>
+			<div class="input-group">
+				<label for="phone"> Enter a phone number:</label>
+				<input type="tel" id="phone" name="phone">
+			</div><br>
+			<div class="input-group">
+			<p>Standard: 1100</p>
+			<p>Special:1150(if you want extra beds)</p><br>
+			<label for="num2"> Which package do you want: </label>
+			<input type="text" id="num2" name="num2"><br>
+			<input type="button" onClick="multiplyBy()" Value="Multiply" /><br>
+			</div>
+				<script>
+					function multiplyBy()
+						{
+								num1 = document.getElementById("num1").value;
+								num2 = document.getElementById("num2").value;
+								document.getElementById("result").innerHTML = num1 * num2;
+						}
+				</script>
+				
+				<p> The Total Amount:</p>
+				<span id = "result"></span><br><br>
+			<button type="reset"class="btn">Clear <i class="fas fa-backspace"></i></button><br>
+			<button type="button" onclick="myFunction()" class="btn">View Booking Details <i class="fas fa-paper-plane"></i></button><br><br>
+			<script type="text/javascript">
+				function myFunction(){
+				var form= document.getElementById("Paymentform");
+				var allFormControls=form.elements;
+
+				if(allFormControls.item(0).value==''){
+				alert('Please Enter your Full Name');
+				return false;
+				}
+				if(allFormControls.item(1).value==''){
+				alert('Please Enter your Country');
+				return false;
+				}
+				if(allFormControls.item(2).value==''){
+				alert('Please Enter The Package Name');
+				return false;
+				}
+				if(allFormControls.item(3).value==''){
+				alert('Please Enter your Pick up Location');
+				return false;
+				}
+				if(allFormControls.item(4).value==''){
+				alert('Please Enter your Drop off Location');
+				return false;
+				}
+				if(allFormControls.item(5).value==''){
+				alert('Please Enter the date');
+				return false;
+				}
+				if(allFormControls.item(6).value==''){
+				alert('Please Enter the time');
+				return false;
+				}
+				if(allFormControls.item(7).value==''){
+				alert('Please enter the number of people');
+				return false;
+				}
+				if(allFormControls.item(8).value==''){
+				alert('Please Enter the Room type number');
+				return false;
+				}
+				if(allFormControls.item(9).value==''){
+				alert('Please Enter your Email Address');
+				return false;
+				}
+				if(allFormControls.item(10).value==''){
+				alert('Please Enter your Phone Number');
+				return false;
+				}
+				if(allFormControls.item(11).value==''){
+				alert('Please Enter the Payment Amount per Package ');
+				return false;
+				}
+				
+				
+				
+				
+				
+				if(allFormControls=form.elements.value!==''){
+				var x = document.getElementById("Paymentform");
+				var txt='';
+				details =['Full name : ','Country : ','Package Name : ','Pick up Location : ','Drop off Location : ','Date : ','Time : ','Number of People : ','Room Type : ','Email Address : ','Phone Number : ','Package Price : '];
+				txt = details[0] + x.elements[0].value + "<br><br>" + details[1] + x.elements[1].value + "<br><br>" 
+				+ details[2]+x.elements[2].value + "<br><br>" + details[3]+x.elements[3].value + "<br><br>"+ details[4] + x.elements[4].value+ "<br><br>"
+				+ details[5] + x.elements[5].value + "<br><br>"+ details[6] + x.elements[6].value + "<br><br>"
+				+ details[7] + x.elements[7].value + "<br><br>"+ details[8] + x.elements[8].value + "<br><br>"
+				+ details[9] + x.elements[9].value + "<br><br>"+ details[10] + x.elements[10].value + "<br><br>"
+				+ details[11] + x.elements[11].value + "<br><br>";
+											 
+				document.getElementById("Paymentform").innerHTML = txt;
+
+
+								}
+				var total=document.getElementById("result").innerHTML = num1 * num2;
+				document.write('Total Price : ',total);
+							 }
+		</script>
+		</form>
+		</div>
+		<a href="Editor's Page.html" class="btn1" style="font-size:20px;">Editor's page</a><br><br>
+		<footer>
+			     <div class="container2">
+				   <div class="sec aboutus">
+				     <h2>About us</h2>
+					 <p>At Yolo Travels, we are committed to understanding your idea of a prefect
+					 Sri lanka holiday. Whatever your budget, we assure caring personal service and highly-competitive prices.</p>
+				     <ul class="sci">
+						    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+							<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+							<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+							<li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+				     </ul>
+				   </div> 
+				   
+				   <div class="sec quickLinks">
+				    <h2>Quick Links</h2>
+					   <ul>
+				         <li><a href="AboutUs.html">About</a></li>
+				         <li><a href="Charming Srilanka.html#terms&conditions">Terms and Conditions</a></li>
+				         <li><a href="Package offer page.html">Itineraries</a></li>
+                         <li><a href="Quiz.html">Quiz</a></li>
+                         <li><a href="Sitemap.html">Site map</a></li>
+					   </ul>
+				 
+				   </div>
+				   
+				   <div class="sec contact">
+				     <h2>Contact Info</h2>
+					 <ul class="info">
+					    <li>
+						   <span><i class="fas fa-map-marker-alt"></i></span>
+						   <span>140A Vauxhall St, Colombo<br>
+						   00200,<br>Sri lanka.</span>
+						</li>
+					 
+					    <li>
+						   <span><i class="fas fa-phone-alt"></i></span>
+						   <span><a href="tel:+9471487233">+94 71487233</a></span>
+						</li>
+					 
+					    <li>
+						   <span><i class="fas fa-envelope"></i></span>
+						   <span><a href="mailto:yolotravels@gmail.com">yolotravels@gmail.com</a></span>
+						</li>
+					 
+					 </ul>
+				   </div>
+				 </div>
+				 
+
+			 </footer>
+	</body>
+</html>

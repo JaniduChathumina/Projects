@@ -1,0 +1,183 @@
+<DOCTYPE!>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Itineraries</title>
+		<link rel="stylesheet" href="Package offer page.css">
+		<link rel="stylesheet" type="text/css" href="style1.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+		<style>
+			.btn{
+				display:inline-block;
+				text-decoration:none;
+				color:#cc0000;
+				padding:12px 34px;
+				font-size:13px;
+				background:transparent;
+				position:relative;
+				transition:0.3s;
+			}
+			.btn:hover{
+				border:1px solid #cc0000;
+				background:#cc0000;
+				border-radius:40px;
+				color:#fff;
+			}
+		</style>
+	</head>
+	<body onload="navOnStart()">
+	<!------ Package offer name ------->
+		<section class="header">
+			
+		<header class="fixed-top scrolled">
+	       	<div class="main">
+			<img src="logo.png" class="logo">
+			<nav>
+                  	<ul>
+				         <li><a href="home.html">Home</a></li>
+				         <li><a href="AboutUs.html">About us</a></li>
+				         <li><a href="Package offer page.html" class="active">Itineraries</a></li>
+				         <li><a href="Gallery.html">Gallery</a></li>
+                         <li><a href="Quiz.html">Quiz</a></li>
+                         <li><a href="Sitemap.html">Site map</a></li>	
+                  	</ul>  
+	           	</nav>
+			</div>
+		</header>
+		<script>
+			var navbar = document.querySelector('header')
+
+			function navOnStart() {
+				navbar.classList.remove('scrolled')
+			}
+			function navAfterStart() {
+				if (window.pageYOffset >0) {
+					navbar.classList.add('scrolled')
+				}else {navbar.classList.remove('scrolled')}
+			}
+               
+			window.onscroll = function() {navAfterStart()};
+			
+		</script>
+
+
+			<div class="text-box">
+				<h1>Itinerary</h1>
+				<p>In here you get to see the packeges and special seasonal<br> offers provided by us.</p>
+			</div>
+		</section>
+		<!-------------- Packages -------------->
+		<section class="itinerary">
+			<div class="package-txt">
+	     <h1 style="font-size:50px;">Itineraries we Offer</h1>
+      </div>
+      <div class="packages">
+          <div class="card1">
+	           <img src="images/colombo.jpg" class="package-img">
+			   <div class="container">
+			      <h4>Charming Srilanka</h4>
+				  	<p>Pristine golden beaches, magnificent temples and colonial era architecture adorn the vibrant city of Colombo. 
+					It is one of the most important cultural centers of Sri Lanka....</p>
+			        <div class="view-details">
+					   <button class='details-button'><span><a href='Charming Srilanka.html'>More Details</a></span></button>
+					</div>  
+			   </div>	  
+          </div>
+
+          <div class="card2">
+	           <img src="images/anuradapura.jpg" class="package-img">
+			   <div class="container">
+			      <h4>Heritage Srilanka</h4>
+				     <p>Anuradhapura and Polonnaruwa both are important ancient cities with hundreds of crumbling monuments.
+					Both cities are UNESCO world heritage sites and popular places to visit in Sri Lanka....</p>
+			        <div class="view-details">
+					   <button class='details-button'><span><a href='Heritage Srilanka.html'>More Details</a></span></button>
+					</div>  
+			   </div>	  
+          </div>
+
+          <div class="card3">
+	           <img src="images/kandy.jpg" class="package-img">
+			   <div class="container">
+			      <h4>Kandy Tour</h4>
+				  <p> Kandy is both an administrative and religious city and is also the capital of the Central Province. 
+				Kandy is the home of the Temple of the Tooth Relic....</p>
+			        <div class="view-details">
+					   <button class='details-button'><span><a href='kandy.html'>More Details</a></span></button>
+					</div>  
+			   </div>	  
+          </div>
+
+          <div class="card4">
+	           <img src="images/beach.jpg" class="package-img">
+			   <div class="container">
+			      <h4> Beach Tour</h4>
+				  	<p>Sri Lanka is a tropical island found in the deep blue waters of the Indian Ocean and the Bay of Bengal. 
+					The country is endowed with over a thousand miles of beautiful golden beaches....</p>
+			        <div class="view-details">
+					   <button class='details-button'><span><a href='beach.html'>More Details</a></span></button>
+					</div>  
+			   </div>	  
+          </div>
+      </div>
+
+			<a href="Editor's Page.html" class="btn" style="font-size:20px;">Editor's page</a><br><br>
+		</section>
+		<footer>
+			     <div class="container">
+				   <div class="sec aboutus">
+				     <h2>About us</h2>
+					 <p>At Yolo Travels, we are committed to understanding your idea of a prefect
+					 Sri lanka holiday. Whatever your budget, we assure caring personal service and highly-competitive prices.</p>
+				     <ul class="sci">
+						    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+							<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+							<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+							<li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+				     </ul>
+				   </div> 
+				   
+				   <div class="sec quickLinks">
+				    <h2>Quick Links</h2>
+					   <ul>
+				         <li><a href="AboutUs.html">About</a></li>
+				         <li><a href="Charming Srilanka.html#terms&conditions">Terms and Conditions</a></li>
+				         <li><a href="Package offer page.html">Itineraries</a></li>
+                         <li><a href="Quiz.html">Quiz</a></li>
+                         <li><a href="Sitemap.html">Site map</a></li>
+					   </ul>
+				 
+				   </div>
+				   
+				   <div class="sec contact">
+				     <h2>Contact Info</h2>
+					 <ul class="info">
+					    <li>
+						   <span><i class="fas fa-map-marker-alt"></i></span>
+						   <span>140A Vauxhall St, Colombo<br>
+						   00200,<br>Sri lanka.</span>
+						</li>
+					 
+					    <li>
+						   <span><i class="fas fa-phone-alt"></i></span>
+						   <span><a href="tel:+9471487233">+94 71487233</a></span>
+						</li>
+					 
+					    <li>
+						   <span><i class="fas fa-envelope"></i></span>
+						   <span><a href="mailto:yolotravels@gmail.com">yolotravels@gmail.com</a></span>
+						</li>
+					 
+					 </ul>
+				   </div>
+				 </div>
+				 
+
+			 </footer>
+		
+	</body>
+</html>

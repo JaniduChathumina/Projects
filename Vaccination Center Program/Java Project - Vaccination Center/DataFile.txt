@@ -1,0 +1,39 @@
+------------------------------------------
+         All booths are occupied
+------------------------------------------
+
+     Janidu Chathumina       Booth 0
+     Nadil Hesera            Booth 1
+     Maleesha Mendis         Booth 2
+     Tharusha Rukshan        Booth 3
+     Kaviru Mendis           Booth 4
+     Lelum Senadeera         Booth 5
+
+------------------------------------------
+            Patient Details
+------------------------------------------
+
+Patient Name     : Janidu Cahthumina
+Patient Age      : 17
+Patient City     : Galle
+Patient NIC      : 123456789
+Vaccination Type : Pfizer
+
+Patient Name     : Nadil Hesera
+Patient Age      : 18
+Patient City     : Matara
+Patient NIC      : 123456789
+Vaccination Type : Sinopharm
+
+------------------------------------------
+         Waiting List is Empty
+------------------------------------------
+
+------------------------------------------
+         53 Vaccines remaining.
+------------------------------------------
+------------------------------------------
+     138 vaccinations are remaining 
+------------------------------------------
+ Pfizer-49  Sinopharm-40  AstraZeneca-49
+------------------------------------------

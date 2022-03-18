@@ -1,0 +1,487 @@
+<!doctype html>
+<html lang="en">
+    <head>
+       <meta charset="UTF-8">
+	   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Home</title>
+	   <link rel="stylesheet" type="text/css" href="style1.css">
+	   <link rel="stylesheet" type="text/css" href="style.css">
+	   <link rel="preconnect" href="https://fonts.googleapis.com">
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+	   <link rel="preconnect" href="https://fonts.googleapis.com">
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap" rel="stylesheet"> 
+	   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+	   <script src="main.js">  
+	   </script>
+    </head>
+    <body onload="navOnStart()">
+	<button onclick="topFunction()" id="backtotop" title="Go to top">&#94;</button>
+		<script>
+		//Get the button
+		var mybutton = document.getElementById("backtotop");
+
+		// When the user scrolls down 20px from the top of the document, show the button
+
+			function scrollFunction() {
+				if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+					mybutton.style.display = "block";
+				} else {
+					mybutton.style.display = "none";
+				}
+			}
+
+			// When the user clicks on the button, scroll to the top of the document
+			function topFunction() {
+				document.body.scrollTop = 0;
+				document.documentElement.scrollTop = 0;
+			}
+	    </script>
+		
+	   <header class="fixed-top scrolled">
+	        <div class="main">
+		       <img src="logo.png" class="logo">
+			   <nav>
+                  <ul>
+			         <li><a href="home.html" class="active">Home</a></li>
+				     <li><a href="AboutUs.html">About us</a></li>
+				     <li><a href="Package offer page.html">Itineraries</a></li>
+				     <li><a href="Gallery.html">Gallery</a></li>
+                     <li><a href="Quiz.html">Quiz</a></li>
+                     <li><a href="Sitemap.html">Site map</a></li>						 
+                  </ul>  
+	           </nav>
+			</div>   
+	   </header>
+	   <script>
+	        //navigation bar changes the color to black when scrolled
+			var navbar = document.querySelector('header')
+
+			function navOnStart() {
+				navbar.classList.remove('scrolled')
+			}
+			function navAfterStart() {
+				if (window.pageYOffset >0) {
+					navbar.classList.add('scrolled')
+				}else {navbar.classList.remove('scrolled')}
+			}
+               
+			window.onscroll = function() {navAfterStart(),scrollFunction()};
+	   </script>
+	    
+	   
+	    <div class="slideshow-container">
+		     
+			 <div class="slideshow-img fade" style="display:block;">
+			       <div class="txt">
+				       <h1>Welcome to Sri lanka</h1> 
+					   
+					   
+				   </div>   
+		           <img src="slideshow/image1.jpg" class="slideshow">
+		     </div>
+			 
+			 <div class="slideshow-img fade">
+                   <div class="txt">
+				       <h1>Explore our heritage</h1> 
+					   
+					   
+				   </div>   			 
+			       <img src="slideshow/image2.jpg" class="slideshow">
+			 </div>	
+			 
+			 <div class="slideshow-img fade">
+                   <div class="txt">
+				       <h1>Seek glorious places of Sri lanka</h1> 
+					   
+					   
+				   </div>   			 
+			       <img src="slideshow/image3.jpg" class="slideshow">
+			 </div>
+			 
+			 <div class="slideshow-img fade">
+                   <div class="txt">
+				       <h1>Experience the beauty of Sri lanka</h1> 
+					   
+					   
+				   </div>   			 
+			       <img src="slideshow/image4.jpg" class="slideshow">
+			 </div>	
+			 
+			 
+		</div>	
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>	
+
+        <div class="dotbox" style="text-align:center;">
+             <span class="dot" onclick="currentSlide(1)"></span>
+			 <span class="dot" onclick="currentSlide(2)"></span>
+			 <span class="dot" onclick="currentSlide(3)"></span>
+             <span class="dot" onclick="currentSlide(4)"></span>
+        </div>	
+		
+		<div class="intro">
+		   <h1>Sri Lanka holidays designed for you</h1>
+		   <p>The enchanting tropical island of sri lanka is one of the hottest holiday destinations in the world.Few countries pack so much variety into such a small space: stunning beaches, awe-inspiring hill country, wildlife parks, ancient cities and venerated temples, wonderful food and a choice of accommodation that grows more delighted by the year. At Yolo Travels, we are committed to understanding your idea of a prefect Sri lanka holiday. Whatever your budget, we assure caring personal service and highly-competitive prices.</p>
+		</div>
+		
+		
+	  <div class="tourist-pics">
+	   <h1>Best Tourist's Shared Photos</h1>
+	  </div> 
+	  
+      <div class="grid-wrapper">
+	    <div>
+		    <img src="tourist gallery/6.jpg" class="image">
+	    </div>
+	  
+	     <div>
+		    <img src="tourist gallery/2.jpg" class="image">
+	     </div>
+	  
+	     <div class="tall">
+		    <img src="tourist gallery/1.jpg" class="image">
+	     </div>
+	  
+	     <div class="big">
+		    <img src="tourist gallery/7.jpg" class="image">
+	     </div>
+	  
+	     <div>
+		    <img src="tourist gallery/3.jpg" class="image">
+	     </div>
+	  
+	     <div class="tall">
+		    <img src="tourist gallery/5.jpg" class="image">
+	     </div>
+
+	     <div>
+		   <img src="tourist gallery/10.jpg" class="image">
+         </div>
+	  </div>	 
+	 
+      <div class="center-button">	 
+	      <button class='gallery-button'><span><a href='Gallery.html'>View more</a></span></button>
+	  </div>
+
+	  <div class="services">
+	       <h1>Our Services</h1>
+             <table>
+	            <tr colspan="4"> 
+	               <td class="column">
+		               <img src="service icons/24-hours-support.png" class="service-icon">
+		               <h4>24-7 Customer Service</h4>
+		               <p>Yolo travels provides a 24 hour,7 day a week emergency service to all customers.</p>
+		           </td>
+		 
+		            <td class="column">
+		               <img src="service icons/accounting.png" class="service-icon"> 
+                       <h4>Accounting Services</h4>				
+			           <p>Yolo travels issues an invoice to the customer via online transactions. Car hires,tours hotel, etc..,are billed on reciept of the supplier's invoice.</p>	
+		            </td>  
+		 
+		            <td class="column">
+		              <img src="service icons/credit-card.png" class="service-icon"> 
+			          <h4>Flexible Bookings</h4>
+		              <p>When you book with us you have the flexibility to change your travel plans to suit you - with assurance that your money is protected.</p>
+		            </td>
+		 
+		            <td class="column">
+		              <img src="service icons/travel-insurance.png" class="service-icon">
+                      <h4>Travel Insurance</h4>
+		              <p>Yolo travels issues travel insurance policies provided by with the parthership of AIA insurance and Union insurance.</p>
+		            </td>	     
+	            </tr>
+	         </table> 
+      </div>
+	  
+	  
+	  
+	  
+	  
+	  <div class="package-txt">
+	     <h1>Itineraries we Offer</h1>
+      </div>
+      <div class="packages">
+          <div class="card1">
+	           <img src="packages/colombo.jpg" class="package-img">
+			   <div class="container">
+			      <h4>Charming Sri lanka</h4>
+				  	<p>Pristine golden beaches, magnificent temples and colonial era architecture adorn the vibrant city of Colombo. It is one of the most important...</p>
+			        <div class="view-details">
+					   <button class='details-button'><span><a href='Charming Srilanka.html'>More Details</a></span></button>
+					</div>  
+			   </div>	  
+          </div>
+
+          <div class="card2">
+	           <img src="packages/anuradapura.jpg" class="package-img">
+			   <div class="container">
+			      <h4>Heritage Sri lanka</h4>
+				     <p>Anuradhapura and Polonnaruwa both are important ancient cities with hundreds of crumbling monuments..</p>
+			        <div class="view-details">
+					   <button class='details-button'><span><a href='heritage Srilanka.html'>More Details</a></span></button>
+					</div>  
+			   </div>	  
+          </div>
+
+          <div class="card3">
+	           <img src="packages/kandy.jpg" class="package-img">
+			   <div class="container">
+			      <h4>Kandy Tour</h4>
+				  <p>Kandy is both an administrative and religious city and is also the capital of the Central Province. Kandy is the home of the Temple of the Tooth Relic....</p>
+			        <div class="view-details">
+					   <button class='details-button'><span><a href='kandy.html'>More Details</a></span></button>
+					</div>  
+			   </div>	  
+          </div>
+
+          <div class="card4">
+	           <img src="packages/beach.jpg" class="package-img">
+			   <div class="container">
+			      <h4> Beach Tour</h4>
+				  	<p>Sri Lanka is a tropical island found in the deep blue waters of the Indian Ocean and the Bay of Bengal. The country is with over with...</p>
+			        <div class="view-details">
+					   <button class='details-button'><span><a href='beach.html'>More Details</a></span></button>
+					</div>  
+			   </div>	  
+          </div>
+      </div>	
+
+
+
+      <div class="parallex">
+	      <h1>How well do you know about Sri lanka?</h1>
+		  <p>Do you want to challenge yourself to seek how far your knowledge about Sri lanka is?
+		     <br>well, here's a one minute quiz to test yourself.</p>
+      
+	      <div class="start-quiz">
+		      <button class="quiz-button"><span><a href='Quiz Start.html'>Start Quiz</a></span></button>
+		  </div>
+	  </div>
+	  
+	  <div class="query-form">
+	      <h1>Contact us</h1>
+		  <div class="main-text">
+		      <p>if you have any questions or require further infomation, please do not hesitate to <br>contact us at anytime.</p>
+		  </div>
+		  
+		  <div class="contact-container">
+		     <div class="contactInfo">
+			    <div class="box">
+				   <div class="icon">
+				        <i class="fas fa-map-marker-alt"></i>
+				   </div>
+				      <div class="contact-text">
+					       <h3>Address</h3>
+						   <p>140A Vauxhall St, Colombo<br>00200,<br>Sri lanka.</p>
+					  </div> 	
+                </div>
+                <div class="box">
+				   <div class="icon">
+				     <i class="fas fa-phone-alt"></i>
+				   </div>
+				      <div class="contact-text">
+					       <h3>Phone</h3>
+						   <p>+94 71487233</p>
+					  </div> 
+                </div>
+				
+                <div class="box">
+				   <div class="icon">
+				      <i class="fas fa-envelope"></i>
+				   </div>
+				      <div class="contact-text">
+					       <h3>Email</h3>
+						   <p>yolotravels@gmail.com</p>
+					  </div>
+                 </div>
+		     </div>
+	
+		   
+           <div class="contact-form">
+              <form id="contactForm" action="mailto:yasanga.20200954@iit.ac.lk?subject=Contact form submission details" method="post" enctype="text/plain" name="conForm">
+			    <a name ="contact-queryForm"/>
+			    <div id="step1">
+			     <h2>Send Message</h2>
+				 <div class="inputBox">
+				     <input type="text" name="name" id="fullName" required="required">
+					 <label for="fullName">Full Name</label>
+				 </div>
+   
+                  <div class="inputBox">
+				     <input type="email" name="email" id="Email" required="required">
+					 <label for="Email">Email</label>
+				  </div>				  
+			  
+			      <div class="inputBox">
+				     <select name="subject" id="subject" required="required">
+					    <option value="" disabled selected>Subject</option>
+					    <option value="General Support">General support</option>
+						<option value="Billing">Billing</option>
+						<option value="Suggestions">Suggestions</option>
+						<option value="Other">Other</option>
+				     </select>					 
+				  </div>
+			  
+			      <div class="inputBox">
+				     <textarea required="required" id="message" name="message"></textarea>
+					 <label for="message">Message</label>
+				  </div>				  
+			      
+				 <div class="contact-button">
+				    <div class="inputBox">
+			         <input type="button" value="View message" onclick="myFunction()"></button>
+				    </div>	
+				 </div>
+				</div> 
+                <div id ="summary-details">				
+                 <div class="summary">
+				                <h2>Summary</h2>
+				               
+					            <p>Full name : <span id='NAME'></span></p>
+					            <p>E-mail : <span id='EMAIL'></span></p>
+					            <p>Subject : <span id='SUBJECT'></span></p>
+					            <p>Message: <span id='MESSAGE'></span></p>
+					
+				 </div>
+	             <div id="disabled-buttons">
+				    <div class="inputButton">
+				     <input type ="submit"  value="Send" id="submit-button" onclick="submitForm()">
+					</div>
+                 
+                    <div class="inputButton">				 
+				     <input type ="button"  value="Edit"  id="edit-button" onclick="editForm()"> 
+					 
+					</div> 
+			     </div>
+			    </div>				
+			   </form>
+            </div>
+	       </div>
+		   <div class="editor-button">	 
+	                    <button class='editorpage-button'><span><a href='EditorStudent_2.html'>Editor's Page</a></span></button>
+	       </div>
+	  </div>
+	 
+			<script>
+             function myFunction(){
+			   
+			     var form = document.getElementById('contactForm');
+				 var allFormControls=form.elements;
+				 
+					      if (allFormControls.item(0).value==''){
+						     alert('Please enter your full name');
+							 return false;
+							 
+						  }
+					   
+					      if(allFormControls.item(1).value==''){
+						     alert('Please enter your email');
+							 return false;
+							 
+						  }
+						  
+						  if(allFormControls.item(2).value==''){
+						     alert('Please select your subject');
+							 return false;
+							 
+						  }
+						  
+						  if(allFormControls.item(3).value==''){
+						     alert('Please type your message');
+							 return false;
+						  }
+		   
+                          if(allFormControls=form.elements.value!==''){
+						     document.getElementById("step1").style.display ="none";
+							 document.getElementById("summary-details").style.display ="block"; 
+							 
+							 var name =document.getElementById('contactForm').elements[0].value;
+							 document.getElementById('NAME').innerHTML = name;
+							 
+							 var email =document.getElementById('contactForm').elements[1].value;
+							 document.getElementById('EMAIL').innerHTML = email;
+							 
+							 var subject =document.getElementById('contactForm').elements[2].value;
+							 document.getElementById('SUBJECT').innerHTML = subject;
+							 
+							 var message =document.getElementById('contactForm').elements[3].value;
+							 document.getElementById('MESSAGE').innerHTML = message;
+							 
+							  
+						
+						
+						     
+							 
+							 
+							 }
+							
+			}
+		
+	         function editForm(){
+			       document.getElementById("summary-details").style.display = "none";
+				   document.getElementById("step1").style.display = "block";
+             }
+	         function submitForm(){
+			     document.getElementById("summary-details").style.display = "none";
+                 alert("Thank you for your feedback!")
+			 }			
+		     </script>
+			 
+		   	 <footer>
+			     <div class="container">
+				   <div class="sec aboutus">
+				     <h2>About us</h2>
+					 <p>At Yolo Travels, we are committed to understanding your idea of a prefect
+					 Sri lanka holiday. Whatever your budget, we assure caring personal service and highly-competitive prices.</p>
+				     <ul class="sci">
+						    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+							<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+							<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+							<li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+				     </ul>
+				   </div> 
+				   
+				   <div class="sec quickLinks">
+				    <h2>Quick Links</h2>
+					   <ul>
+				         <li><a href="AboutUs.html">About</a></li>
+				         <li><a href="Charming Srilanka.html#terms&conditions">Terms and Conditions</a></li>
+				         <li><a href="Package offer page.html">Itineraries</a></li>
+                         <li><a href="Quiz.html">Quiz</a></li>
+                         <li><a href="Sitemap.html">Site map</a></li>
+					   </ul>
+				 
+				   </div>
+				   
+				   <div class="sec contact">
+				     <h2>Contact Info</h2>
+					 <ul class="info">
+					    <li>
+						   <span><i class="fas fa-map-marker-alt"></i></span>
+						   <span>140A Vauxhall St, Colombo<br>
+						   00200,<br>Sri lanka.</span>
+						</li>
+					 
+					    <li>
+						   <span><i class="fas fa-phone-alt"></i></span>
+						   <span><a href="tel:+9471487233">+94 71487233</a></span>
+						</li>
+					 
+					    <li>
+						   <span><i class="fas fa-envelope"></i></span>
+						   <span><a href="mailto:yolotravels@gmail.com">yolotravels@gmail.com</a></span>
+						</li>
+					 
+					 </ul>
+				   </div>
+				 </div>
+				 
+
+			 </footer>
+
+
+   </body>	 
+</html>
