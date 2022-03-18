@@ -1,0 +1,2 @@
+# YOLO Website - A Website for Travelling Company
+(You Only Live Once) Built using HTML/CSS and JavaScript. This website allows the users to add the travelling package to a cart and also there is quizz about travelling in which the users can attempt in a given time.

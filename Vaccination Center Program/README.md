@@ -1,0 +1,3 @@
+# Vaccination Center Program - Zyphrus
+This is a program built with Java, it allows to maintain 5 vaccination booths according to the user requested vaccination type. Furthermore if all the booths are full it contains a que so that once a patient is removed from a booth the next patient in the que will be automatically added.
+Java Swing was used to develop a UI (Not linked with the program). Once patient details are added it generates an e-recipt.
